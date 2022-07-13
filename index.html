@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Admin Dasboard</title>
 </head>
 <body>
     <div class="content" >
-        <div id="side-bar" >
-            <div class="dash-logo">Dashboard</div>
+        <div class="sidebar" >
+            <div class="dash-logo">
+                <img src="incons/icons8-logo-100.png" alt="dash-icon">
+                Dashboard
+            </div>
             <div class="top-sidebar">
                 <ul class="side-icons">
                     <li>
@@ -57,48 +64,57 @@
                 </ul>
             </div>
         </div>
-        <div id="header">
+        <div class="header">
             <div class="searchbar">
-                <img src="incons/magnify.png" alt="search-icon">
+                <img class="magnify" src="incons/magnify.png" alt="search-icon">
                 <input class="search-bar" type="text" placeholder="search">
             </div>
-            <div class="alert-box">
-                <img src="incons/bell.png" alt="alert-bell">
+            <div class="login-info">
+                <img class="bell" src="incons/bell.png" alt="alert-bell">
+                <img class="icon" src="incons/account1.png" alt="login-pic">
+                <div class="text">
+                    Morgan Oakley
+                </div>
             </div>
-            <div class="login-info"></div>
             <div class="social-buttons">
                 <ul class="header-icons">
-                    <li><button>News</button></li>
-                    <li><button>Upload</button></li>
-                    <li><button>Share</button></li>
+                    <li class="news-button" ><button>News</button></li>
+                    <li class="upload-button"><button>Upload</button></li>
+                    <li class="share-button"><button>Share</button></li>
                 </ul>
             </div>
-        </div>
-        <div id="main-content">
-            <div class="projects">
-                
-                    
-                
-                <div class="card">
-                    <div class="card-text"><strong>Super cool project</strong> <br>
-                        <p>Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    </div>
-                    <div class="card-icons">
-                        <ul class="icons-bar" >
-                            <li>
-                                <img src="incons/heart.png" alt="heart-icon">
-                            </li>
-                            <li>
-                                <img src="incons/eye.png" alt="eye-icon">
-                            </li>
-                            <li>
-                                <img src="incons/link-plus.png" alt="link-icon">
-                            </li>
-                        </ul>
-                    </div>
+            <div class="greeting">
+                <img class="icon" src="incons/account1.png" alt="icon-pic">
+                <div class="text"> <strong>Hi there, <br>Morgan Oakley (@morgan)</strong> 
                 </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="projects">
+                <div class="content-title">
+                    <h1 class="content-text">Your Projects</h1>
+                </div> 
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-text"> <h3 class="card-title">Super cool project</h3> <br>
+                            <p>Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        </div>
+                        <div class="card-icons">
+                            <ul class="icons-bar" >
+                                <li>
+                                    <img src="incons/heart.png" alt="heart-icon">
+                                </li>
+                                <li>
+                                    <img src="incons/eye.png" alt="eye-icon">
+                                </li>
+                                <li>
+                                    <img src="incons/link-plus.png" alt="link-icon">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 <div class="card">
-                    <div class="card-text"><h3>Impossible App</h3> <br> <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> </div>
+                    <div class="card-text"><h3 class="card-title">Impossible App</h3> <br> <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> </div>
                     <div class="card-icons">
                         <ul class="icons-bar" >
                             <li>
@@ -115,7 +131,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-text"> <strong>Ad Blocker</strong> <br> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
+                    <div class="card-text"> <h3 class="card-title">Ad Blocker</h3><br> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
                     <div class="card-icons">
                         <ul class="icons-bar" >
                             <li>
@@ -131,7 +147,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-text"> <strong>Less Cool Project</strong> <br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
+                    <div class="card-text"> <h3 class="card-title">Less Cool Project</h3><br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
                     <div class="card-icons">
                         <ul class="icons-bar" >
                             <li>
@@ -147,7 +163,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-text"> <strong>Easy Peasy App</strong><br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
+                    <div class="card-text"> <h3 class="card-title">Easy Peasy App</h3><br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p></div>
                     <div class="card-icons">
                         <ul class="icons-bar" >
                             <li>
@@ -163,7 +179,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-text"> <strong>Money Maker</strong> <br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p> </div>
+                    <div class="card-text"><h3 class="card-title">Money Maker</h3><br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p> </div>
                     <div class="card-icons">
                         <ul class="icons-bar" >
                             <li>
@@ -178,18 +194,31 @@
                         </ul>
                     </div>
                 </div>
+                </div> 
+                
             </div>
+            
             <div class="right-bar">
+                <div class="announcement" >
+                    <h2 class="announcement-title">Announcements</h2>
+                </div>
                 <div class="announcements">
-                    <div><Strong>Site Maintenance</Strong> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus nihil aut nostrum nesciunt nemo?</div>
-                    <div><strong>Community Share Day</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque magni ut cumque adipisci ipsam.</div>
-                    <div><strong>Update Privacy Policy</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero explicabo illo accusantium voluptate nihil.</div>
+                    <div class="ann-p"><h3>Site Maintenance</h3><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus nihil aut nostrum nesciunt nemo?</div>
+                    <div class="ann-p"><h3>Community Share Day</h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque magni ut cumque adipisci ipsam.</div>
+                    <div class="ann-p"> <h3>Update Privacy Policy</h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero explicabo illo accusantium voluptate nihil.</div>
                 </div>
                 <div class="trending">
-                    <div>stuff</div>
-                    <div>stuff</div>
-                    <div>stuff</div>
-                    <div>stuff</div>
+                    <h3>Trending</h3>
+                    <div class="trending-p">
+                        <img src="incons/world.png" alt="world-pic">
+                        <p>@Tegan <br>World Peace builder</p>
+                    </div>
+                    <div class="trending-p"><img src="incons/dog.png" alt="">
+                        <p>@Morgan <br>Super Cool Project</p></div>
+                    <div class="trending-p"><img src="incons/cat.png" alt="">
+                        <p>@Kendal <br>Life Changing App</p></div>
+                    <div class="trending-p"><img src="incons/light.png" alt="">
+                        <p>@Alex <br>No Traffic Maker</p></div>
                 </div>
             </div>
         </div>
